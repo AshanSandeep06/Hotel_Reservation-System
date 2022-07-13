@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="customerReservationContext" prefHeight="702.0" prefWidth="1330.0" style="-fx-background-color: #2980b9;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ViewCustomerReservationDetailsController">
+   <children>
+      <TableView fx:id="tblCustomerResDetails" layoutX="14.0" layoutY="109.0" prefHeight="530.0" prefWidth="1303.0">
+        <columns>
+          <TableColumn fx:id="tblColumnRoomID" prefWidth="128.00003051757812" text="Room ID" />
+          <TableColumn fx:id="tblColoumnCusName" prefWidth="217.0" text="Customer Name" />
+            <TableColumn fx:id="tblColumnAddress" prefWidth="142.0" text="Address" />
+            <TableColumn fx:id="tblColumnNoOfRooms" prefWidth="164.0" text="No of rooms" />
+            <TableColumn fx:id="tblColumnRoomType" prefWidth="178.0" text="Room type" />
+            <TableColumn fx:id="tblColoumnDays" prefWidth="162.0" text="Days" />
+            <TableColumn fx:id="tblColumnMealPlan" prefWidth="156.0" text="Meal Plan" />
+            <TableColumn fx:id="tblColoumnOption" prefWidth="154.0" text="Option" />
+        </columns>
+      </TableView>
+      <Label layoutX="472.0" layoutY="14.0" text="All customer reservation details" textFill="#00055b">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <Separator layoutX="51.0" layoutY="60.0" opacity="0.18" prefHeight="1.0" prefWidth="1229.0" style="-fx-background-color: #00055b;" />
+      <ImageView fitHeight="19.0" fitWidth="19.0" layoutX="17.0" layoutY="14.0" onMouseClicked="#backArrowKeyOnAction" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+         <image>
+            <Image url="@../assets/icons8-next-page-26.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="1148.0" layoutY="678.0" onMouseClicked="#viewFinancialReportsOnAction" prefHeight="21.0" prefWidth="149.0" text="View financial reports" />
+      <ImageView fitHeight="21.0" fitWidth="19.0" layoutX="1297.0" layoutY="679.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-help-24.png" />
+         </image>
+      </ImageView>
+   </children>
+   <effect>
+      <DropShadow />
+   </effect>
+</AnchorPane>

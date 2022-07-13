@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainPageContext" prefHeight="702.0" prefWidth="1330.0" style="-fx-background-color: #2e86de#2e86de;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MainFormController">
+   <children>
+      <ImageView fitHeight="702.0" fitWidth="1350.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/set.PNG" />
+         </image>
+      </ImageView>
+      <Button fx:id="btn1" layoutX="39.0" layoutY="632.0" mnemonicParsing="false" onAction="#btnOnAction" prefHeight="51.0" prefWidth="352.0" style="-fx-background-color: FF8D23;" text="LET'S GET STARTED" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

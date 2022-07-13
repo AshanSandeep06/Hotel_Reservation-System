@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="secondPageContext" prefHeight="702.0" prefWidth="1330.0" style="-fx-background-color: #2980b9;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.SelectAccessorFormController">
+   <children>
+      <ImageView fitHeight="206.0" fitWidth="357.0" layoutX="556.0" layoutY="374.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/uuuuuuuuuuuuuuuuuuuuu.PNG" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="598.0" layoutY="632.0" onAction="#backToHomePageOnAction" prefHeight="39.0" prefWidth="134.0" style="-fx-background-color: FF8D23;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <Button layoutX="602.0" layoutY="288.0" mnemonicParsing="false" onAction="#loginOnAction" prefHeight="38.0" prefWidth="127.0" style="-fx-background-color: rgba(50, 183, 104, 1);" text="Let's Go" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="322.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/60111.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="837.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/492454-PH6RIC-289.jpg" />
+         </image>
+      </ImageView>
+      <CheckBox fx:id="cbxAdmin" layoutX="352.0" layoutY="216.0" mnemonicParsing="false" onMousePressed="#adminPressedOnAction" text="Admin" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="cbxReceptionist" layoutX="843.0" layoutY="216.0" mnemonicParsing="false" onMousePressed="#receptionistPressedOnAction" text="Receptionist" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </CheckBox>
+   </children>
+</AnchorPane>

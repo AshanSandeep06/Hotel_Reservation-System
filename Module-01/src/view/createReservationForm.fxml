@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="createRservationContext" prefHeight="702.0" prefWidth="1330.0" style="-fx-background-color: #2980b9;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CreateReservationFormController">
+   <children>
+      <Label layoutX="39.0" layoutY="14.0" prefHeight="36.0" prefWidth="262.0" text="Unavailable Rooms" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Label>
+      <Separator layoutX="39.0" layoutY="57.0" opacity="0.34" prefHeight="0.0" prefWidth="1244.0" />
+      <ImageView fitHeight="383.0" fitWidth="1146.0" layoutX="39.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/ss2.PNG" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="546.0" layoutY="627.0" onAction="#createReservationOnAction" prefHeight="43.0" prefWidth="231.0" style="-fx-background-color: #1e3799 #1e3799;" text="Create a reservation" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="127.0" fitWidth="1330.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

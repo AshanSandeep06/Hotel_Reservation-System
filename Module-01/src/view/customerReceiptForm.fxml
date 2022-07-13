@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="636.0" prefWidth="553.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CustomerReceiptFormController">
+   <children>
+      <Label layoutX="24.0" layoutY="24.0" text="Customer Receipt">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="24.0" fitWidth="25.0" layoutX="486.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-printer-20.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="24.0" layoutY="64.0" text="Your reservation is now confirmed">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="1.0" startY="0.5436893203883497">
+               <stops>
+                  <Stop color="#241d1d" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="141.0" prefHeight="21.0" prefWidth="71.0" text="Guest">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="1.0" startY="0.5436893203883497">
+               <stops>
+                  <Stop color="#241d1d" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblGuestName" layoutX="351.0" layoutY="137.0" prefHeight="35.0" prefWidth="195.0" text="James Gosline" textFill="#374151">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="194.0" prefHeight="21.0" prefWidth="71.0" text="Rooms">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="1.0" startY="0.5436893203883497">
+               <stops>
+                  <Stop color="#241d1d" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblRoomsQuantity" layoutX="492.0" layoutY="190.0" prefHeight="35.0" prefWidth="24.0" text="2" textFill="#374151">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Separator layoutX="28.0" layoutY="242.0" prefHeight="1.0" prefWidth="481.0" />
+      <Label layoutX="28.0" layoutY="260.0" prefHeight="21.0" prefWidth="71.0" text="Days">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="1.0" startY="0.5436893203883497">
+               <stops>
+                  <Stop color="#241d1d" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="313.0" prefHeight="27.0" prefWidth="121.0" text="Meal Charges">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="1.0" startY="0.5436893203883497">
+               <stops>
+                  <Stop color="#241d1d" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblMealCharges" layoutX="404.0" layoutY="309.0" prefHeight="35.0" prefWidth="71.0" text="2000" textFill="#374151">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDays" layoutX="494.0" layoutY="256.0" prefHeight="35.0" prefWidth="30.0" text="2" textFill="#374151">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Separator layoutX="28.0" layoutY="362.0" prefHeight="1.0" prefWidth="481.0" />
+      <Label layoutX="28.0" layoutY="391.0" prefHeight="27.0" prefWidth="121.0" text="Room charges">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="1.0" startY="0.5436893203883497">
+               <stops>
+                  <Stop color="#241d1d" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblPricePerNight" layoutX="409.0" layoutY="387.0" prefHeight="35.0" prefWidth="62.0" text="2000" textFill="#374151">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="441.0" prefHeight="27.0" prefWidth="121.0" text="Cleaning fees">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="1.0" startY="0.5436893203883497">
+               <stops>
+                  <Stop color="#241d1d" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblCleaningFees" layoutX="409.0" layoutY="437.0" prefHeight="35.0" prefWidth="62.0" text="300" textFill="#374151">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="521.0" prefHeight="35.0" prefWidth="71.0" text="Total" textFill="#374151">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTotalCost" layoutX="393.0" layoutY="520.0" prefHeight="35.0" prefWidth="88.0" text="10600" textFill="#09439f">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="601.0" onMouseClicked="#MailToCustomerOnAction" prefHeight="27.0" prefWidth="179.0" text="📧   Mail to customer">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="1.0" startY="0.5436893203883497">
+               <stops>
+                  <Stop color="#241d1d" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="475.0" layoutY="309.0" prefHeight="35.0" prefWidth="52.0" text="LKR" textFill="#374151">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="476.0" layoutY="387.0" prefHeight="35.0" prefWidth="52.0" text="LKR" textFill="#374151">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="475.0" layoutY="437.0" prefHeight="35.0" prefWidth="52.0" text="LKR" textFill="#374151">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="476.0" layoutY="520.0" prefHeight="35.0" prefWidth="52.0" text="LKR" textFill="#374151">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

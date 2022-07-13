@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="adminSignUpContext" prefHeight="702.0" prefWidth="1330.0" style="-fx-background-color: #2980b9;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AdminSignUpFormController">
+   <children>
+      <Label layoutX="26.0" layoutY="30.0" text="Sign Up" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Label>
+      <Separator layoutX="26.0" layoutY="95.0" opacity="0.54" prefHeight="1.0" prefWidth="489.0" />
+      <JFXTextField fx:id="txtFullName" focusColor="#122c79" labelFloat="true" layoutX="42.0" layoutY="141.0" prefHeight="48.0" prefWidth="472.0" promptText="Full Name" unFocusColor="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="txtPassword" focusColor="#122c79" labelFloat="true" layoutX="42.0" layoutY="357.0" prefHeight="48.0" prefWidth="472.0" promptText="Password" unFocusColor="WHITE" />
+      <JFXButton layoutX="42.0" layoutY="464.0" onAction="#createAnAccountOnAction" prefHeight="48.0" prefWidth="472.0" style="-fx-background-color: #1e3799 #1e3799;" text="CREATE AN ACCOUNT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="251.0" layoutY="535.0" text="OR" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Label>
+      <Separator layoutX="43.0" layoutY="565.0" opacity="0.54" prefHeight="3.0" prefWidth="182.0" />
+      <Separator layoutX="333.0" layoutY="563.0" opacity="0.54" prefHeight="3.0" prefWidth="182.0" />
+      <JFXButton layoutX="42.0" layoutY="618.0" onAction="#alreadyHaveAnAccountOnAction" prefHeight="48.0" prefWidth="472.0" style="-fx-background-color: rgba(48, 51, 107, 1);" text="ALREADY HAVE AN ACCOUNT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="657.0" fitWidth="709.0" layoutX="608.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/we%20have.PNG" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="txtEmail" focusColor="#122c79" labelFloat="true" layoutX="42.0" layoutY="257.0" prefHeight="48.0" prefWidth="472.0" promptText="Email" unFocusColor="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+   </children>
+</AnchorPane>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="financialReportsContext" prefHeight="702.0" prefWidth="1330.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.FinancialFormController">
+   <children>
+      <ImageView fitHeight="702.0" fitWidth="1330.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/business-man-financial-inspector-secretary-making-report-calculating-checking-balance-internal-revenue-service-inspector-checking-document-audit-concept.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="20.0" layoutY="7.0" prefHeight="47.0" prefWidth="259.0" text="Financial Report" textFill="#25010f">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="36.0" fitWidth="30.0" layoutX="1256.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-pay-date-20.png" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="761.0" layoutY="103.0" onAction="#monthReportsOnAction" prefHeight="47.0" prefWidth="132.0" style="-fx-background-color: rgba(25, 42, 86, 1); -fx-border-color: rgba(255, 255, 255, 1);" text="Month" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="1074.0" layoutY="103.0" onAction="#annualReportsOnAction" prefHeight="47.0" prefWidth="132.0" style="-fx-background-color: rgba(25, 42, 86, 1); -fx-border-color: rgba(255, 255, 255, 1);" text="Annual" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="120.0" layoutY="103.0" onAction="#dayReportsOnAction" prefHeight="47.0" prefWidth="132.0" style="-fx-background-color: rgba(25, 42, 86, 1); -fx-border-color: rgba(255, 255, 255, 1);" text="Day" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="448.0" layoutY="103.0" onAction="#weekReportsOnAction" prefHeight="47.0" prefWidth="132.0" style="-fx-background-color: rgba(25, 42, 86, 1); -fx-border-color: rgba(255, 255, 255, 1);" text="Week" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="575.0" layoutY="644.0" onAction="#logOutToAdminLoginOnAction" prefHeight="30.0" prefWidth="186.0" style="-fx-background-color: rgba(255, 141, 35, 1)rgba(255, 141, 35, 1);" text="Log out" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="73.0" layoutY="220.0" prefHeight="21.0" prefWidth="94.0" text="Income">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="289.0" layoutY="221.0" prefHeight="36.0" prefWidth="115.0" text="Expense">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="532.0" layoutY="221.0" prefHeight="36.0" prefWidth="73.0" text="Profit">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblIncome" layoutX="78.0" layoutY="303.0" prefHeight="32.0" prefWidth="115.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblExpense" layoutX="323.0" layoutY="303.0" prefHeight="21.0" prefWidth="94.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblProfit" layoutX="537.0" layoutY="303.0" prefHeight="32.0" prefWidth="132.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="89.0" layoutY="335.0" prefHeight="32.0" prefWidth="41.0" text="LKR" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="326.0" layoutY="335.0" prefHeight="32.0" prefWidth="41.0" text="LKR" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="548.0" layoutY="335.0" prefHeight="32.0" prefWidth="41.0" text="LKR" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="215.0" fitWidth="259.0" layoutX="917.0" layoutY="245.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/222222222222222222222222222222222222222222222.PNG" />
+         </image>
+      </ImageView>
+      <Label layoutX="941.0" layoutY="203.0" prefHeight="36.0" prefWidth="197.0" text="Customer Feedbacks">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
